@@ -1,12 +1,8 @@
-{{#freestyle-guide
-  title='Ember Freestyle'
-  subtitle='Living Style Guide'
-  }}
+{{#freestyle-guide title='Freestyle Test App' subtitle='Living Style Guide'}}
 
   {{#freestyle-section name='Visual Style' as |section|}}
 
     {{#section.subsection name='Typography'}}
-
       {{#freestyle-usage 'typography-times' title='Times New Roman'}}
         {{freestyle-typeface fontFamily='Times New Roman'}}
       {{/freestyle-usage}}
@@ -14,11 +10,9 @@
       {{#freestyle-usage 'typography-helvetica' title='Helvetica'}}
         {{freestyle-typeface fontFamily='Helvetica'}}
       {{/freestyle-usage}}
-
     {{/section.subsection}}
 
     {{#section.subsection name='Color'}}
-
       {{#freestyle-usage 'fp' title='Freestyle Palette' usageTitle='Usage'}}
         {{freestyle-palette
         colorPalette=colorPalette
@@ -26,8 +20,23 @@
         description='This component displays the color palette specified in freestyle/palette.json'
         }}
       {{/freestyle-usage}}
-
     {{/section.subsection}}
+
+  {{/freestyle-section}}
+
+  {{#freestyle-section name="Components"}}
+
+    {{#freestyle-usage "loading-spinner" title="Loading Spinner"}}
+      {{loading-spinner}}
+    {{/freestyle-usage}}
+    {{#freestyle-annotation}}
+      <h1>Contextual HTML Note for Anything in the Freestyle Guide</h1>
+
+      <p>
+        You can write helpful HTML notes explaining anything in the
+        Freestyle guide.
+      </p>
+    {{/freestyle-annotation}}
 
   {{/freestyle-section}}
 
