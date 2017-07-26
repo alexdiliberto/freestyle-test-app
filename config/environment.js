@@ -44,7 +44,8 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-
+    ENV.rootURL = '/deploy-dummy-app';
+    ENV.locationType = 'hash';
   }
 
   return ENV;
